@@ -1,0 +1,140 @@
+.loading-animation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+    padding: 0 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+ 
+.home-login{
+    padding: 10px;
+    border-radius: 8px;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    color: black;
+    margin-left: 30px;
+}
+.home-login:hover{
+  text-decoration: none;
+}
+div form {
+    text-align: center;
+}
+.search-box input[type='search']{
+  width: 70%;
+  margin-top: 40px;
+  padding: 15px;
+}
+
+.search-container{
+  /* background-image: url('https://mcdn.wallpapersafari.com/medium/0/80/KIiEkW.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+  height: 100vh;
+
+}
+.book-card {
+  background-color: #ebf2fc;
+  border-radius: 24px;
+  margin-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 15px;
+}
+
+
+
+#searchResults {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates two equal-width columns */
+}
+
+.book-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* .book-image {
+  width: 50%; /* Adjust the width of the book images 
+} */
+
+.author{
+  font-weight: bold;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  border-radius: 24px;
+  background-color: rgb(129, 192, 240, 0.9);
+}
+
+.overlay:hover{
+  opacity: 1;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 80%;
+  text-align: center;
+}
+
+.cart{
+  text-decoration: none;
+  border: 1px solid white;
+  border-width: 1px;
+  background-color: rgb(250, 250, 250, 0.8);
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 5px;
+} 
+
+.cart:hover{
+  text-decoration: none;
+}
+
+.no-result {
+  color: red;
+  font-size: 35px;
+  margin: 40px;
+
+}
